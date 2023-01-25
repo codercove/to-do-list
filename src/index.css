@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  padding-top: 20px;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+header h1 span {
+  font-size: 26px;
+  font-weight: 900;
+  padding-right: 6px;
+
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.stats-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stats-section ul {
+  list-style: none;
+  color: rgba(136, 136, 136, 0.932);
+}
+
+.stats-section ul li:first-child {
+  color: #0c0c0c;
+}
+
+.stats-section .created-stats {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 0 !important;
+}
+
+.stats-section .completed-stats {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+input[type="checkbox"]:checked+span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+input[type="checkbox"] {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.container ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.container ul {
+  margin: 0 auto;
+  padding-left: 0;
+  padding: 20px;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+.container ul li div span {
+  font-size: 18px;
+  font-weight: 600;
+  transform: translateY(3px);
+}
+
+.container ul li .trash {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container ul li .trash:hover {
+  color: #f00;
+}
+
+.container ul li {
+  margin: 10px 0;
+}
+
+#new {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+button {
+  margin: 0 auto;
+}
+
+a {
+  color: #00b36e !important;
+}
+
+nav {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+nav a {
+  font-size: 35px;
+}
+
+nav h3 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 22px;
+  padding: 4px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.input-container input {
+  max-width: 400px;
+  min-width: 250px;
+  height: auto;
+  min-height: 26px;
+}
+
+.input-container button {
+  margin-top: 20px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+  border: 2px solid #00b36e;
+  color: #00b36e;
+  cursor: pointer;
+}
+
+.input-container button:hover,
+.error-container button:hover {
+  background-color: #00b36e;
+  color: #fff;
+  box-shadow: 0 0 2px #00b36e, 0 0 2px #00b36e;
+}
+
+.error-container {
+  text-align: center;
+}
+
+.error-container img {
+  margin: 20px auto;
+}
+
+.error-container button {
+  border: 2px solid #00b36e;
+  color: #00b36e;
+  cursor: pointer;
+  font-size: 23px;
+  padding: 10px;
+}
