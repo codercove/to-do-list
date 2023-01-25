@@ -50,9 +50,60 @@ const Wrapper = () => {
                 <div className="content">
                   {" "}
                   {task.status == "completed" ? (
-                    <input type="checkbox" defaultChecked />
+                    <input
+                      type="checkbox"
+                      name={task.name}
+                      defaultChecked
+                      onChange={(e) => {
+                        console.log(e.currentTarget.checked);
+                        for (let y in savedTasks) {
+                          if (savedTasks[y].name == e.target.name) {
+                            if (e.currentTarget.checked) {
+                              savedTasks[y].status = "completed";
+                              setSavedTasks([...savedTasks]);
+                              localStorage.setItem(
+                                "tasks",
+                                JSON.stringify(savedTasks)
+                              );
+                            } else {
+                              savedTasks[y].status = "not-completed";
+                              setSavedTasks([...savedTasks]);
+                              localStorage.setItem(
+                                "tasks",
+                                JSON.stringify(savedTasks)
+                              );
+                            }
+                          }
+                        }
+                      }}
+                    />
                   ) : (
-                    <input type="checkbox" />
+                    <input
+                      type="checkbox"
+                      name={task.name}
+                      onChange={(e) => {
+                        console.log(e.currentTarget.checked);
+                        for (let y in savedTasks) {
+                          if (savedTasks[y].name == e.target.name) {
+                            if (e.currentTarget.checked) {
+                              savedTasks[y].status = "completed";
+                              setSavedTasks([...savedTasks]);
+                              localStorage.setItem(
+                                "tasks",
+                                JSON.stringify(savedTasks)
+                              );
+                            } else {
+                              savedTasks[y].status = "not-completed";
+                              setSavedTasks([...savedTasks]);
+                              localStorage.setItem(
+                                "tasks",
+                                JSON.stringify(savedTasks)
+                              );
+                            }
+                          }
+                        }
+                      }}
+                    />
                   )}
                   <span>{task.name}</span>
                 </div>
